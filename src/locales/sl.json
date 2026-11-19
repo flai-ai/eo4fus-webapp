@@ -1,0 +1,163 @@
+{
+  "header": {
+    "aboutTooltip": "O projektu",
+    "aboutTitle": "O projektu",
+    "partnersTitle": "Partnerji",
+    "aboutDescription": "EO4FUS je aplikacija, ki uporabniku omogoča hiter vpogled v stanje gozda za izbrano območje na delu Slovenije, zajetem z LiDAR skeniranjem 2023. Združuje podatke laserskega skeniranja (LiDAR 2023), satelitske posnetke Sentinel-2 in terenske meritve za oceno izbranih metrik, kot so višina dreves, površina krošnje, lesna zaloga in druge. Razvita je bila v okviru projekta, ki ga v celoti financira Evropska vesoljska agencija (ESA), v sodelovanju med Flai, Slovenskim gozdarskim inštitutom (SFI) in Znanstvenoraziskovalnim centrom Slovenske akademije znanosti in umetnosti (ZRC SAZU)."
+  },
+  "layerPanel": {
+    "title": "Sloji"
+  },
+  "units": {
+    "tPerHa": "t/ha",
+    "m3PerHa": "m³/ha",
+    "t": "t",
+    "m3": "m³"
+  },
+  "layerGroups": {
+    "base": "Podlaga",
+    "forest": "Stanje gozda",
+    "divisions": "Gozdnogospodarska delitev",
+    "routes": "Prometnice"
+  },
+  "layers": {
+    "osm": "OpenStreetMap",
+    "ortofoto": "Digitalni ortofoto",
+    "dmr": "Digitalni model reliefa",
+    "dofIr": "Infrardeči ortofoto",
+    "tops": "Zaznana drevesa",
+    "treeType": "Prevladujoča drevesna vrsta",
+    "agb": "Nadzemna biomasa",
+    "speciesMixture": "Mešanost drevesnih vrst",
+    "volume": "Lesna zaloga",
+    "ggo": "Gozdnogospodarsko območje",
+    "gge": "Gozdnogospodarska enota",
+    "forestCompartments": "Gozdni odseki",
+    "forestRoads": "Gozdne ceste",
+    "publicPaths": "Poti javne infrastrukture",
+    "publicRoads": "Ceste javne infrastrukture",
+    "short": {
+      "ortofoto": "DOF",
+      "dmr": "DMR",
+      "dofIr": "DOF IR",
+      "agb": "AGB",
+      "volume": "LZ",
+      "ggo": "GGO",
+      "gge": "GGE",
+      "publicPaths": "GJI",
+      "publicRoads": "GJI"
+    }
+  },
+  "toolbar": {
+    "home": "Domov",
+    "drawPolygon": "Zajemi območje",
+    "measureDistance": "Meri razdaljo",
+    "measureArea": "Meri površino",
+    "clear": "Počisti"
+  },
+  "popup": {
+    "title": "{count} zadetek | {count} zadetka | {count} zadetki | {count} zadetkov",
+    "loading": "Nalaganje...",
+    "ggo": "GGO",
+    "gge": "GGE",
+    "compartment": "Odsek",
+    "area": "Površina",
+    "areaTooLarge": "Območje je preveliko (> 260.000 ha). Narišite manjše območje za prikaz GGO, GGE in odsekov.",
+    "treeCountUnit": "drevo | drevesi | drevesa | dreves",
+    "clusterHint": "Povečajte za prikaz posameznih dreves",
+    "showPixelValues": "Pokaži vrednosti piksla",
+    "sampling": "Vzorčenje...",
+    "unknown": "Neznano",
+    "errors": {
+      "compartmentTooLarge": "Odsek je prevelik: {area} (maks. {max}).",
+      "areaTooLarge": "Območje je preveliko: {area} (maks. {max}). Narišite manjše območje.",
+      "zoomInToSample": "Pri tej povečavi ni mogoče odčitati vrednosti. Približajte, da bo en zaslonski piksel manjši od piksla rastra.",
+      "noPredictionHere": "Na tem območju noben sloj nima napovedi — vsi piksli so zunaj gozdne maske.",
+      "polygonOffScreen": "Del območja ni na zaslonu, zato ga ni bilo mogoče odčitati. Oddaljite se toliko, da bo celotno območje vidno."
+    }
+  },
+  "results": {
+    "title": "Rezultati",
+    "close": "Zapri",
+    "disclaimer": "Prikazane metrike temeljijo na podatkih iz leta 2023. Vrednosti so modelske ocene in se lahko razlikujejo od dejanskega stanja na terenu. Upoštevani so piksli, katerih središče pade v izbrano območje.",
+    "loading": "Nalaganje...",
+    "ggo": "GGO",
+    "gge": "GGE",
+    "compartment": "Odsek",
+    "compartments": "Odseki",
+    "crownArea": "Površina krošenj",
+    "shareOfGround": "{pct} % tal",
+    "heightClasses": "Porazdelitev višin",
+    "heightAxis": "višinski razred (m)",
+    "treesPerHa": "dreves/ha",
+    "treesUnit": "dreves",
+    "heightBinTitle": "{range} m: {count} dreves ({pct} %)",
+    "area": "Površina",
+    "treesNotCountable": "Dreves na tem območju ni bilo mogoče prešteti",
+    "treesAreaTooLarge": "Območje je preveliko za štetje dreves (največ {max})",
+    "trees": "Zaznana drevesa",
+    "empty": "Kliknite na objekt na karti za prikaz podatkov.",
+    "total": "Skupaj",
+    "range": "Razpon",
+    "viewPointCloud": "Ogled oblaka točk",
+    "hidePointCloud": "Skrij oblak točk",
+    "measuredTitle": "Izmerjeno · LiDAR 2023",
+    "modelledTitle": "Modelska ocena",
+    "pixel": "Piksel",
+    "coordinates": "Središče",
+    "uncertaintyNote": "Napaka je relativna: model ima na celotnem območju eno samo absolutno negotovost (± {agb} t/ha pri biomasi, ± {volume} m³/ha pri lesni zalogi), ki je tu deljena z napovedjo. Zato odstotek pada z višjo napovedjo in ni meritev natančnosti tega piksla.",
+    "crown": "Krošnja",
+    "perHectare": "Na hektar",
+    "perPixel": "Na pikslu",
+    "speciesMixture": "Mešanost",
+    "treeSpecies": "Prevladujoča vrsta",
+    "uncertainty": "Napaka",
+    "showOnMap": "Prikaži na karti",
+    "heightRow": "Višina",
+    "colLowest": "Najnižje",
+    "colP95": "p95",
+    "colTallest": "Najvišje",
+    "colMean": "Povprečje",
+    "covered": "Pokrito",
+    "density": "Gostota",
+    "captured": "Zajeto",
+    "requestedShort": "izbrano {area}",
+    "noPrediction": "ni napovedi",
+    "classNumber": "Razred {k}",
+    "featureKeys": {
+      "treeId": "ID drevesa",
+      "area": "Površina",
+      "height": "Višina",
+      "layer": "Sloj",
+      "crownArea": "Površina krošnje"
+    },
+    "showAll": "pokaži vse",
+    "showLess": "pokaži manj"
+  },
+  "legend": {
+    "opacity": "Prosojnost"
+  },
+  "speciesMixture": {
+    "class0": "Listavci",
+    "class1": "Mešano, pretežno listavci",
+    "class2": "Mešano, pretežno iglavci",
+    "class3": "Iglavci"
+  },
+  "treeSpecies": {
+    "beech": "Bukev",
+    "spruce": "Smreka",
+    "fir": "Jelka",
+    "pine": "Bor",
+    "oak": "Hrast",
+    "mixedBroadleaves": "Mešani listavci",
+    "mixedConifers": "Mešani iglavci",
+    "class": "Razred {k}"
+  },
+  "pointcloud": {
+    "title": "Oblak točk",
+    "close": "Zapri",
+    "expand": "Povečaj",
+    "maximize": "Razpni",
+    "restore": "Pomanjšaj"
+  }
+}

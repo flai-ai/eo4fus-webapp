@@ -1,0 +1,163 @@
+{
+  "header": {
+    "aboutTooltip": "About the project",
+    "aboutTitle": "About the project",
+    "partnersTitle": "Partners",
+    "aboutDescription": "EO4FUS is an application that provides users with a quick overview of forest conditions for a selected area in the part of Slovenia covered by the 2023 LiDAR survey. It combines data from airborne laser scanning (LiDAR 2023), Sentinel-2 satellite imagery, and field measurements to estimate selected metrics such as tree height, crown area, growing stock, and others. It was developed within a project fully funded by the European Space Agency (ESA), in collaboration between Flai, the Slovenian Forestry Institute (SFI), and the Research Centre of the Slovenian Academy of Sciences and Arts (ZRC SAZU)."
+  },
+  "layerPanel": {
+    "title": "Layers"
+  },
+  "units": {
+    "tPerHa": "t/ha",
+    "m3PerHa": "m³/ha",
+    "t": "t",
+    "m3": "m³"
+  },
+  "layerGroups": {
+    "base": "Base map",
+    "forest": "Forest attributes",
+    "divisions": "Forest management divisions",
+    "routes": "Roads and paths"
+  },
+  "layers": {
+    "osm": "OpenStreetMap",
+    "ortofoto": "Orthophoto",
+    "dmr": "Digital terrain model",
+    "dofIr": "Infrared orthophoto",
+    "tops": "Detected trees",
+    "treeType": "Dominant tree species",
+    "agb": "Above-ground biomass",
+    "speciesMixture": "Tree species mixture",
+    "volume": "Growing stock",
+    "ggo": "Forest management region",
+    "gge": "Forest management unit",
+    "forestCompartments": "Forest compartments",
+    "forestRoads": "Forest roads",
+    "publicPaths": "Public infrastructure paths",
+    "publicRoads": "Public infrastructure roads",
+    "short": {
+      "ortofoto": "",
+      "dmr": "DTM",
+      "dofIr": "",
+      "agb": "AGB",
+      "volume": "",
+      "ggo": "",
+      "gge": "",
+      "publicPaths": "",
+      "publicRoads": ""
+    }
+  },
+  "toolbar": {
+    "home": "Home",
+    "drawPolygon": "Capture an area",
+    "measureDistance": "Measure distance",
+    "measureArea": "Measure area",
+    "clear": "Clear"
+  },
+  "popup": {
+    "title": "{count} result | {count} results",
+    "loading": "Loading...",
+    "ggo": "Forest Management Region",
+    "gge": "Forest Management Unit",
+    "compartment": "Forest Compartment",
+    "area": "Area",
+    "areaTooLarge": "Area is too large (> 260,000 ha). Draw a smaller area to display Forest Management Regions, Units, and Compartments.",
+    "treeCountUnit": "tree | trees",
+    "clusterHint": "Zoom in to view individual trees",
+    "showPixelValues": "Show pixel values",
+    "sampling": "Sampling...",
+    "unknown": "Unknown",
+    "errors": {
+      "compartmentTooLarge": "Forest Compartment is too large: {area} (max. {max}).",
+      "areaTooLarge": "Area is too large: {area} (max. {max}). Draw a smaller area.",
+      "zoomInToSample": "Values cannot be read at this zoom. Zoom in until one screen pixel is smaller than a raster pixel.",
+      "noPredictionHere": "No layer has a prediction here — every pixel is outside the forest mask.",
+      "polygonOffScreen": "Part of the area is off screen and could not be read. Zoom out until the whole area is visible."
+    }
+  },
+  "results": {
+    "title": "Results",
+    "close": "Close",
+    "disclaimer": "Displayed metrics are based on 2023 data. Values are model estimates and may differ from actual field conditions. Pixels whose centre falls within the selected area are included.",
+    "loading": "Loading...",
+    "ggo": "Forest management region",
+    "gge": "Forest management unit",
+    "compartment": "Forest compartment",
+    "compartments": "Forest compartments",
+    "crownArea": "Crown area",
+    "shareOfGround": "{pct} % of ground",
+    "heightClasses": "Height distribution",
+    "heightAxis": "height class (m)",
+    "treesPerHa": "trees/ha",
+    "treesUnit": "trees",
+    "heightBinTitle": "{range} m: {count} trees ({pct} %)",
+    "area": "Area",
+    "treesNotCountable": "Trees could not be counted for this area",
+    "treesAreaTooLarge": "Area is too large to count trees (max {max})",
+    "trees": "Detected trees",
+    "empty": "Click on a map feature to display data.",
+    "total": "Total",
+    "range": "Range",
+    "viewPointCloud": "View point cloud",
+    "hidePointCloud": "Hide point cloud",
+    "measuredTitle": "Measured · LiDAR 2023",
+    "modelledTitle": "Model estimate",
+    "pixel": "Pixel",
+    "coordinates": "Centre",
+    "uncertaintyNote": "The error is relative: the model has a single absolute uncertainty across the whole area (± {agb} t/ha for biomass, ± {volume} m³/ha for growing stock), divided here by the prediction. The percentage therefore falls as the prediction rises, and is not a measure of this pixel's accuracy.",
+    "crown": "Crown",
+    "perHectare": "Per hectare",
+    "perPixel": "On this pixel",
+    "speciesMixture": "Mixture",
+    "treeSpecies": "Dominant species",
+    "uncertainty": "Error",
+    "showOnMap": "Show on map",
+    "heightRow": "Height",
+    "colLowest": "Lowest",
+    "colP95": "p95",
+    "colTallest": "Tallest",
+    "colMean": "Mean",
+    "covered": "Covered",
+    "density": "Density",
+    "captured": "Captured",
+    "requestedShort": "{area} selected",
+    "noPrediction": "no prediction",
+    "classNumber": "Class {k}",
+    "featureKeys": {
+      "treeId": "Tree ID",
+      "area": "Area",
+      "height": "Height",
+      "layer": "Layer",
+      "crownArea": "Crown area"
+    },
+    "showAll": "show all",
+    "showLess": "show less"
+  },
+  "legend": {
+    "opacity": "Opacity"
+  },
+  "speciesMixture": {
+    "class0": "Broadleaves",
+    "class1": "Mixed, mainly broadleaves",
+    "class2": "Mixed, mainly conifers",
+    "class3": "Conifers"
+  },
+  "treeSpecies": {
+    "beech": "Beech",
+    "spruce": "Norway spruce",
+    "fir": "Silver fir",
+    "pine": "Scots pine",
+    "oak": "Oak",
+    "mixedBroadleaves": "Mixed broadleaves",
+    "mixedConifers": "Mixed conifers",
+    "class": "Class {k}"
+  },
+  "pointcloud": {
+    "title": "Point cloud",
+    "close": "Close",
+    "expand": "Expand",
+    "maximize": "Maximize",
+    "restore": "Restore"
+  }
+}

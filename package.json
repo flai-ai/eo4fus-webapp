@@ -1,0 +1,57 @@
+{
+  "name": "eo4fus-webapp",
+  "version": "0.0.0",
+  "description": "Web map viewer for the EO4FUS project: forest conditions in Slovenia from LiDAR, Sentinel-2 and field data.",
+  "private": true,
+  "license": "MIT",
+  "homepage": "https://github.com/flai-ai/eo4fus-webapp#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/flai-ai/eo4fus-webapp.git"
+  },
+  "bugs": {
+    "url": "https://github.com/flai-ai/eo4fus-webapp/issues"
+  },
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "run-s lint:*",
+    "lint:oxlint": "oxlint . --fix",
+    "lint:eslint": "eslint . --fix --cache",
+    "format": "prettier --write --experimental-cli src/"
+  },
+  "dependencies": {
+    "@primevue/themes": "^4.5.4",
+    "@tanstack/vue-query": "^5.92.9",
+    "@vueuse/core": "^14.2.1",
+    "axios": "^1.13.5",
+    "geotiff": "^3.0.5",
+    "ol": "^10.7.1",
+    "primeicons": "^7.0.0",
+    "primevue": "^4.5.4",
+    "proj4": "^2.20.2",
+    "vue": "^3.5.27",
+    "vue-i18n": "^9.14.5",
+    "vue-router": "^5.0.1"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.39.2",
+    "@vitejs/plugin-basic-ssl": "^2.1.4",
+    "@vitejs/plugin-vue": "^6.0.3",
+    "eslint": "^9.39.2",
+    "eslint-config-prettier": "^10.1.8",
+    "eslint-plugin-oxlint": "~1.42.0",
+    "eslint-plugin-vue": "~10.7.0",
+    "globals": "^17.3.0",
+    "npm-run-all2": "^8.0.4",
+    "oxlint": "~1.42.0",
+    "prettier": "3.8.1",
+    "vite": "^7.3.1",
+    "vite-plugin-vue-devtools": "^8.0.5"
+  },
+  "engines": {
+    "node": "^20.19.0 || >=22.12.0"
+  }
+}
